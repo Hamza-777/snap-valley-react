@@ -1,0 +1,41 @@
+.card {
+color: #B91646;
+background-color: #DFD8CA;
+border-radius: 15px;
+padding: 40px 50px;
+margin: 20px 0;
+border: 3px solid #B91646;
+}
+
+.image {
+width: 70%;
+margin: 10px auto;
+border-radius: 10px;
+text-align: center;
+}
+
+.image img {
+width: 100%;
+height: 100%;
+object-fit: contain;
+border-radius: 10px;
+cursor: pointer;
+border: 3px solid #105652;
+}
+
+.text {
+width: 70%;
+margin: 10px auto;
+font-size: 19px;
+word-wrap: break-word;
+}
+
+i {
+cursor: pointer;
+color: red;
+font-size: 20px;
+}
+
+i:hover {
+transform: scale(1.1);
+}
