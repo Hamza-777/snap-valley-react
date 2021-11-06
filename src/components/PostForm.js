@@ -1,3 +1,4 @@
+import { v4 as uuidv4 } from 'uuid';
 import React, { useState } from 'react';
 import './PostForm.css';
 
@@ -8,7 +9,7 @@ const PostForm = (props) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const newPost = {
-            id: 4,
+            id: uuidv4(),
             image,
             text,
         };
