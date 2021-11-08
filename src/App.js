@@ -30,11 +30,15 @@ function App() {
     setPosts([newPost, ...posts]);
   }
 
+  const deletePost = (itemID) => {
+    setPosts(posts.filter(post => post.id !== itemID));
+  }
+
   return (
     <div className="App">
       <Header />
       <PostForm newPost={addNewPost} />
-      <PostList posts={posts} />
+      <PostList posts={posts} removePost={deletePost} />
     </div>
   );
 }

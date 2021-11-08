@@ -30,10 +30,23 @@ font-size: 19px;
 word-wrap: break-word;
 }
 
+.like-remove {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 i {
 cursor: pointer;
-color: red;
 font-size: 20px;
+}
+
+#like {
+    color: red;
+}
+
+#delete {
+    color:black;
 }
 
 i:hover {

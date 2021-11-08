@@ -16,13 +16,20 @@ const PostItem = (props) => {
         setCls('fas fa-heart');
     };
 
+    const handleDelete = (e) => {
+        props.deletePost(props.post.id);
+    }
+
     return (
         <div className="card">
             {
                 props.post.image ? <div className="image"><img src={props.post.image} alt="" onDoubleClick={handleDblClick} /></div> : <div></div>
             }
             <p className="text">{props.post.text}</p>
-            <i className={cls} onClick={handleLikes} />
+            <div className="like-remove">
+                <i className={cls} id="like" onClick={handleLikes} />
+                <i className="far fa-trash-alt" id="delete" onClick={handleDelete}></i>
+            </div>
         </div>
     )
 }
